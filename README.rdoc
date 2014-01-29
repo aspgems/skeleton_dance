@@ -1,3 +1,5 @@
 = SkeletonDance
 
-This project rocks and uses MIT-LICENSE.
+http://www.youtube.com/watch?v=h03QBNVwX8Q
+
+Simple engine to render html from the assets pipeline
