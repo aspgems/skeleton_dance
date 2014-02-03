@@ -1,3 +1,5 @@
 SkeletonDance::Engine.routes.draw do
-  get '/html(/:layout(/*page))' => 'html#show'
+  if Rails.env.development?
+    get '/html(/:layout(/*page))' => 'html#show'
+  end
 end
