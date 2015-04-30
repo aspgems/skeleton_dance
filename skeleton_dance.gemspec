@@ -7,11 +7,11 @@ require "skeleton_dance/version"
 Gem::Specification.new do |s|
   s.name        = "skeleton_dance"
   s.version     = SkeletonDance::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SkeletonDance."
-  s.description = "TODO: Description of SkeletonDance."
+  s.authors     = ["ASPGems"]
+  s.email       = ["info@aspgems.com"]
+  s.homepage    = "https://aspgems.com"
+  s.summary     = "Dance with your html mockups"
+  s.description = "Simple engine to render html from the assets pipeline"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
