@@ -1,4 +1,4 @@
-class SkeletonDance::HtmlController < ActionController::Base
+class SkeletonDance::HtmlController < SkeletonDance::InjectedController
   before_filter :add_project_paths, only: :show
 
   layout :layout_param, only: :show
@@ -13,10 +13,7 @@ class SkeletonDance::HtmlController < ActionController::Base
   private
 
   def add_project_paths
-    prepend_view_path Rails.root.join('app', 'assets', 'html')
-    Dir.glob(Rails.root.join('engines', '**/app/assets/html')).each do |engine_path|
-      prepend_view_path engine_path
-    end
+    inject_view_paths
   end
 
   def layout_param
