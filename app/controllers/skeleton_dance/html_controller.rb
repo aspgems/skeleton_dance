@@ -1,5 +1,5 @@
 class SkeletonDance::HtmlController < SkeletonDance::InjectedController
-  before_filter :add_project_paths, only: :show
+  before_action :add_project_paths, only: :show
 
   layout :layout_param, only: :show
 
